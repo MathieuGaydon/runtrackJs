@@ -1,0 +1,15 @@
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 20px;
+}

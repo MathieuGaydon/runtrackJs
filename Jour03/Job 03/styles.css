@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  #game-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 315px; /* Ajustez la largeur pour les 3 colonnes et les espaces */
+    height: 315px; /* Ajustez la hauteur pour les 3 lignes et les espaces */
+  }
+  
+  .tile {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .tile img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .empty-tile {
+    background-color: transparent;
+    cursor: default;
+  }
+  
+  #win-message {
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+  }
+  
+  #step-count {
+    font-size: 18px;
+  }
+  
+  #restart-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #restart-button:hover {
+    background-color: #218838;
+  }
+  

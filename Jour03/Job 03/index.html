@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du Taquin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-grid">
+            <div class="tile" id="logo1"><img src="images/logo1.png" alt="Logo 1"></div>
+            <div class="tile" id="logo2"><img src="images/logo2.png" alt="Logo 2"></div>
+            <div class="tile" id="logo3"><img src="images/logo3.png" alt="Logo 3"></div>
+            <div class="tile" id="logo4"><img src="images/logo4.png" alt="Logo 4"></div>
+            <div class="tile" id="logo5"><img src="images/logo5.png" alt="Logo 5"></div>
+            <div class="tile" id="logo6"><img src="images/logo6.png" alt="Logo 6"></div>
+            <div class="tile" id="logo7"><img src="images/logo7.png" alt="Logo 7"></div>
+            <div class="tile" id="logo8"><img src="images/logo8.png" alt="Logo 8"></div>
+            <div class="tile empty-tile"></div>
+        </div>
+        <button id="restart-button" style="display:none;">Recommencer</button>
+        <div id="win-message" style="display:none;"></div>
+        <div id="step-count">Étapes : 0</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
