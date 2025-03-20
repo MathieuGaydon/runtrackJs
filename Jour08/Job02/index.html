@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création de Compte</title>
+
+    <!-- CDN de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header avec navigation -->
+    <header class="bg-blue-600 text-white p-4 shadow-lg">
+        <nav>
+            <ul class="flex justify-center space-x-6">
+                <li><a href="index.html" class="hover:text-gray-300">Accueil</a></li>
+                <li><a href="index.html" class="hover:text-gray-300">Inscription</a></li>
+                <li><a href="index.html" class="hover:text-gray-300">Connexion</a></li>
+                <li><a href="index.html" class="hover:text-gray-300">Rechercher</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section formulaire de création de compte -->
+    <section class="max-w-4xl mx-auto p-6 bg-white mt-8 shadow-lg rounded-lg">
+        <h2 class="text-2xl font-semibold mb-6">Création de Compte</h2>
+        <form action="index.html" method="POST">
+            <!-- Civilité -->
+            <label for="civilite" class="block font-medium mb-2">Civilité :</label>
+            <div class="mb-4">
+                <input type="radio" id="monsieur" name="civilite" value="monsieur" required class="mr-2"> 
+                <label for="monsieur" class="mr-4">Monsieur</label>
+                <input type="radio" id="madame" name="civilite" value="madame" required class="mr-2"> 
+                <label for="madame">Madame</label>
+            </div>
+
+            <!-- Prénom, Nom, Adresse -->
+            <label for="prenom" class="block font-medium mb-2">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required class="w-full p-2 border border-gray-300 rounded mb-4">
+
+            <label for="nom" class="block font-medium mb-2">Nom :</label>
+            <input type="text" id="nom" name="nom" required class="w-full p-2 border border-gray-300 rounded mb-4">
+
+            <label for="adresse" class="block font-medium mb-2">Adresse :</label>
+            <input type="text" id="adresse" name="adresse" required class="w-full p-2 border border-gray-300 rounded mb-4">
+
+            <!-- Adresse Email -->
+            <label for="email" class="block font-medium mb-2">Adresse Email :</label>
+            <input type="email" id="email" name="email" required class="w-full p-2 border border-gray-300 rounded mb-4">
+
+            <!-- Mot de passe et confirmation -->
+            <label for="password" class="block font-medium mb-2">Mot de passe :</label>
+            <input type="password" id="password" name="password" required class="w-full p-2 border border-gray-300 rounded mb-4">
+
+            <label for="confirm_password" class="block font-medium mb-2">Confirmer le mot de passe :</label>
+            <input type="password" id="confirm_password" name="confirm_password" required class="w-full p-2 border border-gray-300 rounded mb-4">
+
+            <!-- Choix des passions -->
+            <label class="block font-medium mb-2">Choisissez vos passions :</label>
+            <div class="mb-4">
+                <input type="checkbox" id="informatique" name="passions" value="informatique" class="mr-2"> 
+                <label for="informatique" class="mr-4">Informatique</label>
+                <input type="checkbox" id="voyages" name="passions" value="voyages" class="mr-2"> 
+                <label for="voyages" class="mr-4">Voyages</label>
+                <input type="checkbox" id="sport" name="passions" value="sport" class="mr-2"> 
+                <label for="sport" class="mr-4">Sport</label>
+                <input type="checkbox" id="lecture" name="passions" value="lecture" class="mr-2"> 
+                <label for="lecture">Lecture</label>
+            </div>
+
+            <!-- Bouton de validation -->
+            <button type="submit" class="w-full py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Valider</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center py-4 mt-8">
+        <nav>
+            <ul class="flex justify-center space-x-6">
+                <li><a href="index.html" class="hover:text-gray-300">Accueil</a></li>
+                <li><a href="index.html" class="hover:text-gray-300">Inscription</a></li>
+                <li><a href="index.html" class="hover:text-gray-300">Connexion</a></li>
+                <li><a href="index.html" class="hover:text-gray-300">Rechercher</a></li>
+            </ul>
+        </nav>
+        <p>© 2025 Votre site. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

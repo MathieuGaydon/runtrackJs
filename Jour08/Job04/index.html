@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création de Compte</title>
+
+    <!-- CDN de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- CDN des icônes Font Awesome pour les icônes des champs -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header avec navigation -->
+    <header class="bg-blue-600 text-white p-4 shadow-lg">
+        <nav>
+            <ul class="flex justify-center space-x-6">
+                <li><a href="index.html" class="hover:text-gray-300">Accueil</a></li>
+                <li><a href="index.html" class="hover:text-gray-300">Inscription</a></li>
+                <li><a href="index.html" class="hover:text-gray-300">Connexion</a></li>
+                <li><a href="index.html" class="hover:text-gray-300">Rechercher</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section formulaire de création de compte -->
+    <section class="max-w-4xl mx-auto p-6 bg-white mt-8 shadow-lg rounded-lg">
+        <h2 class="text-2xl font-semibold mb-6 text-center text-blue-600">Création de Compte</h2>
+        <form action="index.html" method="POST">
+            <!-- Civilité -->
+            <label for="civilite" class="block font-medium mb-2">Civilité :</label>
+            <div class="mb-6">
+                <div class="inline-flex items-center mr-4">
+                    <input type="radio" id="monsieur" name="civilite" value="monsieur" required class="mr-2"> 
+                    <label for="monsieur">Monsieur</label>
+                </div>
+                <div class="inline-flex items-center">
+                    <input type="radio" id="madame" name="civilite" value="madame" required class="mr-2"> 
+                    <label for="madame">Madame</label>
+                </div>
+            </div>
+
+            <!-- Prénom, Nom, Adresse -->
+            <div class="mb-6">
+                <div class="relative">
+                    <label for="prenom" class="block font-medium mb-2">Prénom :</label>
+                    <div class="absolute left-3 top-3 text-gray-400"><i class="fas fa-user"></i></div>
+                    <input type="text" id="prenom" name="prenom" required class="w-full p-3 pl-10 border border-gray-300 rounded-lg shadow-md focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Votre prénom">
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <div class="relative">
+                    <label for="nom" class="block font-medium mb-2">Nom :</label>
+                    <div class="absolute left-3 top-3 text-gray-400"><i class="fas fa-user"></i></div>
+                    <input type="text" id="nom" name="nom" required class="w-full p-3 pl-10 border border-gray-300 rounded-lg shadow-md focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Votre nom">
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <div class="relative">
+                    <label for="adresse" class="block font-medium mb-2">Adresse :</label>
+                    <div class="absolute left-3 top-3 text-gray-400"><i class="fas fa-home"></i></div>
+                    <input type="text" id="adresse" name="adresse" required class="w-full p-3 pl-10 border border-gray-300 rounded-lg shadow-md focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Votre adresse">
+                </div>
+            </div>
+
+            <!-- Adresse Email -->
+            <div class="mb-6">
+                <div class="relative">
+                    <label for="email" class="block font-medium mb-2">Adresse Email :</label>
+                    <div class="absolute left-3 top-3 text-gray-400"><i class="fas fa-envelope"></i></div>
+                    <input type="email" id="email" name="email" required class="w-full p-3 pl-10 border border-gray-300 rounded-lg shadow-md focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Votre email">
+                </div>
+            </div>
+
+            <!-- Mot de passe et confirmation -->
+            <div class="mb-6">
+                <div class="relative">
+                    <label for="password" class="block font-medium mb-2">Mot de passe :</label>
+                    <div class="absolute left-3 top-3 text-gray-400"><i class="fas fa-lock"></i></div>
+                    <input type="password" id="password" name="password" required class="w-full p-3 pl-10 border border-gray-300 rounded-lg shadow-md focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Votre mot de passe">
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <div class="relative">
+                    <label for="confirm_password" class="block font-medium mb-2">Confirmer le mot de passe :</label>
+                    <div class="absolute left-3 top-3 text-gray-400"><i class="fas fa-lock"></i></div>
+                    <input type="password" id="confirm_password" name="confirm_password" required class="w-full p-3 pl-10 border border-gray-300 rounded-lg shadow-md focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Confirmez votre mot de passe">
+                </div>
+            </div>
+
+            <!-- Choix des passions -->
+            <label class="block font-medium mb-2">Choisissez vos passions :</label>
+            <div class="mb-6">
+                <div class="inline-flex items-center mr-4">
+                    <input type="checkbox" id="informatique" name="passions" value="informatique" class="mr-2"> 
+                    <label for="informatique">Informatique</label>
+                </div>
+                <div class="inline-flex items-center mr-4">
+                    <input type="checkbox" id="voyages" name="passions" value="voyages" class="mr-2"> 
+                    <label for="voyages">Voyages</label>
+                </div>
+                <div class="inline-flex items-center mr-4">
+                    <input type="checkbox" id="sport" name="passions" value="sport" class="mr-2"> 
+                    <label for="sport">Sport</label>
+                </div>
+                <div class="inline-flex items-center">
+                    <input type="checkbox" id="lecture" name="passions" value="lecture" class="mr-2"> 
+                    <label for="lecture">Lecture</label>
+                </div>
+            </div>
+
+            <!-- Bouton de validation -->
+            <button type="submit" class="w-full py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:outline-none transition ease-in-out duration-300">Valider</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white py-6 mt-8">
+        <nav>
+            <ul class="flex justify-center space-x-6 mb-4"> 
+                <li><a href="index.html" class="hover:text-gray-300">Accueil</a></li>
+                <li><a href="index.html" class="hover:text-gray-300">Inscription</a></li>
+                <li><a href="index.html" class="hover:text-gray-300">Connexion</a></li>
+                <li><a href="index.html" class="hover:text-gray-300">Rechercher</a></li>
+            </ul>
+        </nav>
+        <p class="text-center">© 2025 Votre site. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
