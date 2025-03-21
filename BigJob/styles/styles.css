@@ -1,0 +1,47 @@
+/* Style général pour la page */
+body {
+    padding-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.calendar {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+td {
+    cursor: pointer;
+}
+
+/* Classe pour les dates réservées */
+.reserved {
+    background-color: #ff5c5c !important; /* Date réservée en rouge */
+}
+
+/* Classe pour les dates disponibles */
+.available {
+    background-color: #4caf50 !important; /* Date disponible en vert */
+}
+
+
+/* Classe pour les dates passées (grisée) */
+.text-muted {
+    background-color: #f0f0f0 !important;
+    color: #d3d3d3;
+    cursor: not-allowed; /* Désactive le clic */
+}
